@@ -60,5 +60,13 @@ def update(post_id):
         return render_template("update.html", post=post)
 
 
+@app.route("/<int:post_id>/delete", methods=["GET", "POST"])
+def delete(post_id):
+    post = Post.query.get(post_id)
+    db.session.delete(post)
+    db.session.commit()
+    return redirect("/admin")
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

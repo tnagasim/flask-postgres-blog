@@ -31,7 +31,7 @@ class Post(db.Model):  # type: ignore
 
 @app.route("/admin")
 def admin():
-    posts = Post.query.all()
+    posts = Post.query.order_by(Post.id).all()
     return render_template("admin.html", posts=posts)
 
 
@@ -46,6 +46,18 @@ def create():
         return redirect("/admin")
     elif request.method == "GET":
         return render_template("create.html", method="get")
+
+
+@app.route("/<int:post_id>/update", methods=["GET", "POST"])
+def update(post_id):
+    post = Post.query.get(post_id)
+    if request.method == "POST":
+        post.title = request.form.get("title")
+        post.body = request.form.get("body")
+        db.session.commit()
+        return redirect("/admin")
+    elif request.method == "GET":
+        return render_template("update.html", post=post)
 
 
 if __name__ == "__main__":

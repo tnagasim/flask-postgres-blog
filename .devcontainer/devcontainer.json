@@ -1,0 +1,41 @@
+{
+    "name": "flask-postgres-blog",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "web",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+		"vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "charliermarsh.ruff",
+                "csholmq.excel-to-markdown-table",
+                "davidanson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode",
+                "george-alisson.html-preview-vscode",
+                "github.vscode-github-actions",
+                "marp-team.marp-vscode",
+                "mathematic.vscode-pdf",
+                "mhutchie.git-graph",
+                "ms-azuretools.vscode-docker",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "ms-python.mypy-type-checker",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-vscode.makefile-tools",
+                "mtxr.sqltools-driver-pg",
+                "mtxr.sqltools",
+                "qwtel.sqlite-viewer",
+                "streetsidesoftware.code-spell-checker",
+                "takumii.markdowntabl",
+                "yzhang.markdown-all-in-one"
+            ]
+        },
+        "remoteUser": "vscode"
+    }
+}

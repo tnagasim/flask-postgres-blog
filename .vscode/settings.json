@@ -1,0 +1,68 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": false,
+    "python.analysis.indexing": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "cSpell.words": [
+      "alisson",
+      "blogdb",
+      "charliermarsh",
+      "csholmq",
+      "davidanson",
+      "dotenv",
+      "eamodio",
+      "esbenp",
+      "isort",
+      "itsdangerous",
+      "libpq",
+      "markdowntabl",
+      "marp",
+      "mhutchie",
+      "mtxr",
+      "mypy",
+      "pgdata",
+      "psycopg",
+      "pycache",
+      "pylance",
+      "pytest",
+      "pytz",
+      "qwtel",
+      "sqltools",
+      "takumii",
+      "toolsai",
+      "Werkzeug",
+      "WSGI",
+      "yzhang"
+    ],
+    "makefile.configureOnOpen": false,
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "server": "db",
+        "port": 5432,
+        "askForPassword": true,
+        "driver": "PostgreSQL",
+        "name": "flask-postgres",
+        "database": "blogdb",
+        "username": "postgres"
+      }
+    ]
+}

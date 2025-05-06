@@ -1,0 +1,24 @@
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.ruff]
+line-length = 88
+fix = true
+unsafe-fixes = true
+target-version = "py313"
+exclude = ["migrations", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E203", "E501"]  # blackと競合するルール
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]  # テスト内のassert許容など、必要に応じて調整

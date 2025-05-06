@@ -1,0 +1,36 @@
+# --- Flask & 拡張 ---
+Flask                   # Webアプリ本体
+Flask-SQLAlchemy        # ORM（Flask + SQLAlchemy 統合）
+Flask-Migrate           # マイグレーション（Alembic を統合）
+Flask-Login             # セッション管理・ユーザー認証
+Flask-WTF               # フォーム処理 + CSRF 対応
+Flask-Mail              # メール送信（開発中でも便利）
+
+# --- ユーティリティ ---
+email-validator         # フォーム用メールアドレス検証
+python-dotenv           # .envファイルから環境変数読み込み
+psycopg[binary]         # PostgreSQL 接続ドライバ（バイナリ版）
+pytz                    # タイムゾーンの設定
+types-pytz              # pytzの型stub
+
+# --- デバッグ支援 ---
+Flask-DebugToolbar      # Flask のデバッグ情報表示バー
+Werkzeug                # WSGI ユーティリティ（Flaskの内部依存）
+
+# --- コード品質・整形 ---
+black                   # 厳格なコード整形ツール
+isort                   # import 文のソート整形
+flake8                  # PEP8 準拠のスタイルチェック
+mypy                    # 静的型チェック（type hint 検証）
+ruff                    # 高速な linter（flake8 + isort の代替・補完可）
+
+# --- テスト関連 ---
+pytest                  # 単体テストフレームワーク
+pytest-cov              # pytest のカバレッジ計測
+coverage                # カバレッジレポート出力
+
+# --- 依存関係（補助的） ---
+click                   # Flask CLI や black で使われる CLI ライブラリ
+itsdangerous            # セッションやトークンの署名（Flask内部）
+Jinja2                  # テンプレートエンジン
+WTForms                 # Flask-WTF の内部依存
